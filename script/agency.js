@@ -417,6 +417,30 @@
                 }
             });
 
+            //반응형 모바일 터치 이벤트
+            slideView.on({
+                touchstart(e){  //터치시작 mousedown
+                    touchStart = e.originalEvent.touches[0].clientX;
+                    dragStart = e.originalEvent.touches[0].clientX; - slideWrap.offset().left-winW;
+                    mouseDown = true;
+                },
+                touchend(e){  //터치종료 mouseup
+                    touchEnd = e.originalEvent.changedTouches[0].clientX;
+                    mouseDown = false;
+                    if( (touchStart-touchEnd)>0){
+                        nextCount();
+                    }
+                    if( (touchStart-touchEnd)<0){
+                        prevCount();
+                    }
+                },
+                touchmove(e){ //터치이동 mousemove
+                    if(!mouseDown){return}
+                    dragEnd=e.originalEvent.touches[0].clientX;
+                    slideWrap.css({left:dragEnd-dragStart});
+                }
+            });
+
         }
         section2(){
         }
