@@ -1,19 +1,17 @@
 @charset "UTF-8";
+
 /* 모바일에서 세로방향에서 가로방향으로 바뀌면 글자 커져서 보인다. 
 text-size-조정(어저스트):100%;
 -webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;
 text-size-adjust:100%; */
+
 * {
   margin: 0;
   padding: 0;
   vertical-align: middle;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  box-sizing: border-box;
+  text-size-adjust: 100%;
 }
 
 html {
