@@ -465,6 +465,23 @@ min-width  모바일 태블릿 데스크탑 */
       }
     }
 
+    #section2 {
+        .container{
+            .wrap{
+                .title{
+                  h2{
+                    font-size:13px;
+                  }
+                  p{
+                    font-size:18px;
+                    padding:0 20px;
+                    br{display:none;}
+                  }
+                }
+            }
+        }
+    }
+
     #section5 .container .wrap .content .svg-box li {
       width: 100%;
     }
