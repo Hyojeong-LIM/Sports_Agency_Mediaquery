@@ -240,9 +240,12 @@
             const mobileBtn = $('.mobile-btn');
             let t = 0;
 
+
+            sub.stop().slideUp(0); //로딩시 초기값
+
             resizefn();
             function resizefn(){
-                sub.stop().slideUp(300); //초기값
+                
 
                 if( $(window).innerWidth()<=991){
                     //모바일 메뉴 데스크탑 메인버튼 끄기(off)

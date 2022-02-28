@@ -97,7 +97,7 @@ min-width  모바일 태블릿 데스크탑 */
   #wrap #header .container .wrap .navigation #nav > ul {
     display: block;
     padding: 0;
-    background: #1c1c1c;
+    background: #000;
   }
   #wrap #header .container .wrap .navigation #nav > ul > li {
     width: 100%;
@@ -112,7 +112,8 @@ min-width  모바일 태블릿 데스크탑 */
   #wrap #header .container .wrap .navigation #nav > ul > li > a {
     height: 40px;
     line-height: 40px;
-    color: #fff;
+    color: #ddd;
+    font-size: 16px;
   }
   #wrap #header .container .wrap .navigation #nav > ul > li > .sub {
     position: relative;
@@ -122,7 +123,7 @@ min-width  모바일 태블릿 데스크탑 */
     width: 100%;
   }
   #wrap #header .container .wrap .navigation #nav > ul > li > .sub .sub-wrap {
-    padding: 0;
+    padding: 10px 20px;
   }
   #wrap #header .container .wrap .navigation #nav > ul > li > .sub .sub-wrap ul li dl dt {
     padding: 0;
